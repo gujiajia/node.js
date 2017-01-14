@@ -1,0 +1,19 @@
+table {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+td {
+    border: 1px solid #000;
+    width: 100px;
+    height: 30px;
+}
+标签 
+ul .content li::first {
+    display: block;
+}
+/*默认显示一个面板*/
+.content li:not(0) {
+    display: none;
+}

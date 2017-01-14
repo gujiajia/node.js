@@ -1,0 +1,18 @@
+<ul style="text-align: center">
+    <li style="margin: 5px 0" onclick="openTab('内容管理','content.html')">内容管理</li>
+    <li style="margin: 5px 0">人员管理</li>
+</ul>
+<!-- -->
+<script>
+    function openTab(title, href) {
+        if ($('#mainTabs').tabs('exists', title)) {
+            $('#mainTabs').getTab(title).select();
+        } else {
+            $('#mainTabs').tabs('add', {
+                title: title,
+                href: href,
+                closable: true
+            });
+        }
+    }
+</script>

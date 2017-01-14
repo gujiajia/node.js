@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>个人简历</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/jquery.fullpage.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar-example">
+
+    <nav class="navbar navbar navbar-fixed-top navbar-example" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <ul class="nav navbar-nav navbar-right nav nav-tabs" style="margin: 0 auto" role="tablist">
+            <li data-menuanchor="page1" class="active"><a href="#page1" data-offset="#page1">个人简介</a></li>
+            <li data-menuanchor="page2"><a href="#page2" data-offset="#page2">我的技能</a></li>
+            <li data-menuanchor="page3"><a href="#page3" data-offset="#page3">开发的产品</a></li>
+            <li data-menuanchor="page4"><a href="#page4" data-offset="#page4">系统架构</a></li>
+        </ul>
+    </nav>
+    <!--页面主要内容-->
+    <div id="content">
+        <div class="section section1" id="page1" style="background: url('image/bg-1.jpg');background-size: cover;">
+            <!--头像区-->
+            <div class="container" style="padding-top:50px;">
+                <div class="row">
+                    <!--左边个人介绍-->
+                    <div class="col-md-10 text-center header-picture  noshow">
+                        <img style="border: 5px #c19eb9 solid;" src="image/avartar.png" class="img-circle">
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 40px;color: aqua;">
+                    <div class="col-md-10 namegroup noshow">
+                        <div class="summary text-center">
+                            <p>Name</p>
+                            <h3 class="chineseName noshow">顾佳嘉</h3>
+                            <h2 class="englishName noshow">Gu Jiajia</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--我的技能-->
+                <div class="section section2" id="page2" style="background: url('image/bg-2.jpg');background-size: cover;">
+                </div>
+                <!--开发的产品-->
+                <div class="section section3" id="page3" style="background: url('image/bg-3.jpg');background-size: cover;">
+                    <div class="slide">
+                        <img src="image/app1.png" alt="" style="width:250px;padding-left:40px;">
+                        <img src="image/app2.png" alt="" style="width:250px;padding-left:40px;">
+                        <img src="image/app3.png" alt="" style="width:250px;padding-left:40px;">
+                        <img src="image/app4.png" alt="" style="width:250px;padding-left:40px;">
+                        <img src="image/app5.png" alt="" style="width:250px;padding-left:40px;">
+                        <img src="image/app6.png" alt="" style="width:250px;padding-left:40px;">
+                    </div>
+                    <div class="slide" style="background:url(image/蛋糕房.png) no-repeat;margin: 0 auto;">
+                    </div>
+                    <div class="slide" style="background: url(image/mongodb.png) no-repeat">
+                    </div>
+                    <div class="slide" style="background:url(image/nodejs.png) no-repeat"></div>
+                </div>
+                <div class="section section4" id="page4" style="background: url('image/bg-4.jpg');background-size: cover;"></div>
+            </div>
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
+            <script src="node_modules/fullpage.js/dist/jquery.fullpage.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="dist/index.js"></script>
+</body>
+
+</html>

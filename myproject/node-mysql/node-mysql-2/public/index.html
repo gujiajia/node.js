@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/jquery-easyui-1.5.1/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" href="assets/jquery-easyui-1.5.1/themes/icon.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="assets/jquery-easyui-1.5.1/jquery.min.js"></script>
+    <script src="assets/jquery-fullscreen-plugin/jquery.fullscreen-min.js"></script>
+    <script src="assets/jquery-easyui-1.5.1/jquery.easyui.min.js"></script>
+</head>
+
+<body class="easyui-layout">
+    <!-- 导航 -->
+    <div data-options="region:'north'" style="height:50px;background: #1c2b36;color: #fff">
+        <!-- logo -->
+        <h1 class="logo" style="margin-left: 10px;float: left;width: 200px;padding: 10px 0 10px 15px;">后台管理系统</h1>
+        <!-- 左边两个菜单栏 -->
+        <ul class="navigation" style="float: left">
+            <li><i class="fa fa-home"></i>返回首页</li>
+            <li onclick="$(document).fullScreen(true)"><i class="fa fa-expand"></i></li>
+        </ul>
+        <ul class="navigation" style="float: right">
+            <li>xxx 欢迎回来</li>
+            <li>更新缓存</li>
+            <li>退出登录</li>
+        </ul>
+    </div>
+    <!-- 左侧导航栏 -->
+    <div data-options="region:'west',split:true" title="功能导航" style="width:150px;">
+        <div class="easyui-panel" data-options="href:'navigation.html'"></div>
+    </div>
+    <div data-options="region:'south',split:true" style="height:50px;"></div>
+    <div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+        <div id="mainTabs" class="easyui-tabs">
+            <div title="起始页"></div>
+        </div>
+    </div>
+</body>
+
+</html>

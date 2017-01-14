@@ -1,0 +1,20 @@
+<ion-view hide-nav-bar="true" hide-back-button="false">
+    <div class="bar bar-header bar-dark">
+        <ion-back-button onclick="history.back()" class="button button-clear icon ion-ios-arrow-back">
+        </ion-back-button>
+        <h1 class="title">{{group.name}}</h1>
+    </div>
+    <!--页面内容-->
+    <ion-content style="margin-top:40px;">
+
+        <ion-list>
+            <div class="item item-button-right" ng-repeat="(key,product) in group.products">
+                {{product.name}}
+                <button class="button button-dark" ng-click="actionProduct(key,product)"><i class="icon ion-gear-b"></i></button>
+            </div>
+        </ion-list>
+    </ion-content>
+    <div class="bar bar-footer bar-dark">
+        <div class="title" ng-click="addNewProduct()">新增产品组<i class="ion ion-plus"></i></div>
+    </div>
+</ion-view>

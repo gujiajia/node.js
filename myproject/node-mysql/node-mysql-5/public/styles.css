@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.navigation {
+    height: 40px;
+}
+
+ul.navigation li {
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-right: 20px;
+    padding: 0 20px;
+}
+
+ul.navigation li:hover {
+    background: #16232D;
+    color: #fff;
+}

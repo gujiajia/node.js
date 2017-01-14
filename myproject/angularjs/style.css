@@ -1,0 +1,29 @@
+.navbar {
+    background: url(img/bg.png), #9c1e2e no-repeat;
+}
+
+.navbar-header .navbar-brand img {
+    max-height: 26px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #fff;
+}
+
+.dropdown>a {
+    background: #9c1e2e !important;
+    color: #fff;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    color: #fff;
+    box-shadow: none;
+}

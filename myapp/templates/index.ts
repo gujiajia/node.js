@@ -1,0 +1,1 @@
+// $('.navbar-toggle').modal('toggle')

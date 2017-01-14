@@ -1,0 +1,50 @@
+/* Empty. Add your own CSS if you like */
+
+.img-responsive {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px slide #232323;
+}
+
+
+/*// 头像*/
+
+.avatar {
+    padding-top: 20px;
+    margin: 0;
+    background: url('../img/sky.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    /*display: block;*/
+    vertical-align: middle;
+    text-align: center;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+b {
+    /*color: black;*/
+}
+
+.myPopup {
+    /*background: rgba(232, 242, 22, 0.4);*/
+}
+
+.myPopup .popup-head {
+    /*background: darkslateblue;*/
+}
+
+.myPopup .popup {
+    border-radius: 50%;
+}

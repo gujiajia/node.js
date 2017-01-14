@@ -1,0 +1,134 @@
+$navbarColor:#9c1e2e;
+body {
+    .navbar {
+        background: url(//www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png) #9c1e2e repeat-x ;
+        border-radius: 0;
+    }
+    .navbar-brand {
+        img {
+            margin-top: -4px;
+            max-height: 28px;
+        }
+    }
+    //下拉菜单 背景颜色
+    .dropdown>a,
+    .dropdown a:hover,
+    .dropdown.open>a,
+    .dropdown a:visited {
+        background: $navbarColor;
+    }
+    .dropdown-toggle {
+        color: #fff !important;
+        //上下边距 1px
+        margin: 1px 1;
+        background: transparent !important;
+        //没有盒子阴影
+        box-shadow: none !important;
+    }
+    .carousel-indicators li {
+        background: #9dc819 none repeat scroll 0 0;
+        opacity: 1;
+    }
+    .carousel-indicators li.active {
+        background: #390b1f none repeat scroll 0 0;
+        opacity: 1;
+    }
+    .item img {
+        line-height: 1;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .carousel {
+        margin-top: -10px;
+    }
+    .front-page-header {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        a {
+            color: #249136;
+            &:hover {
+                color: #337ab7;
+            }
+        }
+    }
+    .product-category-link {
+        font-size: 12px;
+        display: block;
+        margin: 0;
+        color: #838383;
+        &:hover {
+            color: #23527c;
+        }
+    }
+    .product-category-link2 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 5px 0px;
+        color: #838383;
+        &:hover {
+            color: #838383;
+        }
+    }
+    .container>.yinx .col-md-3,
+    {
+        width: 20% !important;
+        margin: 0;
+    }
+    .s-style span {
+        font-size: 12px;
+        color: #b5b5b6;
+        padding-left: 2px;
+    }
+    .footer {
+        margin-top: 150px;
+        font-size: 11px;
+        color: #777777;
+        .col-md-2 {
+            padding: 0;
+        }
+    }
+}
+
+//媒体查询
+@media only screen and(max-width:767px) {
+    body {
+        .navbar-brand {
+            span {
+                color: white;
+                display: inline-block !important;
+            }
+            width: 100%;
+            img {
+                display: inline-block;
+                width: 50%;
+            }
+        }
+        .dropdown-toggle {
+            background: url(//www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png) repeat-x;
+        }   
+        .dropdown-menu a {
+            color: white !important;
+        }
+        .container {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        .container>.yinx .col-xs-6 {
+            width: 50% !important;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        .container>.tuijian.col-xs-6 {
+            width: 25% !important;
+        }
+        .product-category-link2 {
+            display: block;
+        }
+        .s-style {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+    }
+}

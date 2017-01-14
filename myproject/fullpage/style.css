@@ -1,0 +1,17 @@
+body {
+    position: relative;
+}
+
+.section {
+    height: 901px;
+    width: 100%;
+}
+
+.nav>li>a {
+    color: #fff!important;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus {
+    background-color: #000;
+}

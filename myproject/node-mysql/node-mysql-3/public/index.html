@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/jquery-easyui-1.5.1/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" href="assets/jquery-easyui-1.5.1/themes/icon.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="assets/jquery-easyui-1.5.1/jquery.min.js"></script>
+    <script src="assets/jquery-fullscreen-plugin/jquery.fullscreen-min.js"></script>
+    <script src="assets/jquery-easyui-1.5.1/jquery.easyui.min.js"></script>
+</head>
+
+<body class="easyui-layout">
+
+
+    <!--导航-->
+    <div data-options="region:'north',border:0" style="height:40px;background: #1C2B36;color:#fff">
+        <!--logo-->
+        <h2 class="logo" style="float:left;width:150px;padding:10px 0 10px 15px;">后台管理系统</h2>
+
+        <!--左边两个菜单-->
+        <ul class="navigation" style="float:left">
+            <li><i class="fa fa-home"></i>返回主页</li>
+            <li onclick="$(document).fullScreen(true)"><i class="fa fa-expand"></i></li>
+        </ul>
+
+        <ul class="navigation" style="float: right">
+            <li>admin 欢迎回来</li>
+            <li>更新缓存</li>
+            <li>退出登录</li>
+        </ul>
+
+
+    </div>
+
+    <!--左侧 导航栏 -->
+    <div data-options="region:'west',split:true" title="功能导航" style="width:150px;">
+        <div class="easyui-panel" data-options="href:'navigation.html'"></div>
+    </div>
+    <div data-options="region:'south',split:true" style="height:50px;"></div>
+    <div data-options="region:'east',split:true" title="East" style="width:100px;"></div>
+
+    <div data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+        <table class="easyui-datagrid" data-options="url:'datagrid_data1.json',method:'get',border:false,singleSelect:true,fit:true,fitColumns:true">
+            <thead>
+                <tr>
+                    <th data-options="field:'itemid'" width="80">Item ID</th>
+                    <th data-options="field:'productid'" width="100">Product ID</th>
+                    <th data-options="field:'listprice',align:'right'" width="80">List Price</th>
+                    <th data-options="field:'unitcost',align:'right'" width="80">Unit Cost</th>
+                    <th data-options="field:'attr1'" width="150">Attribute</th>
+                    <th data-options="field:'status',align:'center'" width="60">Status</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</body>
+
+</html>

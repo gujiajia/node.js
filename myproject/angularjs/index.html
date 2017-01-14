@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>蛋糕</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div ng-controller="headerCtrl">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container" style="padding:0px;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+                    <a class="navbar-brand" href="#"><img class="img-responsive" style="margin-top:-3px;" src="img/logo.png"></a>
+                </div>
+
+                <!--中间的下拉菜单-->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">当前城市：杭州 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#!/about">北京</a></li>
+                                <li><a href="#">上海</a></li>
+                                <li><a href="#">天津</a></li>
+                                <li><a href="#">上海</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品列表 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" ng-repeat="group in groups">{{group.groupName}}</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">寻找我们 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">门店</a></li>
+                                <li><a href="#">配送须知</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">活动 </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于 <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">会员卡</a></li>
+                                <li><a href="#">我们</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--右边的下拉菜单-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">登录</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">注册</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-shopping-cart"></i> 购物车</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div ng-view></div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="dist/app.js"></script>
+    <script src="dist/controllers/header.js"></script>
+
+    <script src="../firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDkEUyGq8y-zj0e4IhMfchZWnu2rwXbHzM",
+            authDomain: "topshadow-1ecc2.firebaseapp.com",
+            databaseURL: "https://topshadow-1ecc2.firebaseio.com",
+            storageBucket: "topshadow-1ecc2.appspot.com",
+            messagingSenderId: "636079104588"
+        };
+        firebase.initializeApp(config);
+        // firebase.database().ref('user').on('value',function(snapshot){
+        // console.log(snapshot.val()) // })
+    </script>
+</body>
+
+</html>

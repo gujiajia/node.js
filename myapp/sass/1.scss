@@ -1,0 +1,54 @@
+body {
+    // 导航栏
+    .navbar {
+        // #99999 16*16*16*16*16*16   rgb 256*256*256  
+        background: rgb(35, 133, 161);
+        border-bottom: 0;
+        // logo
+        .navbar-brand {
+            padding: 0;
+        }
+        // 导航栏菜单
+        .nav.navbar-nav a {
+            color: #fff;
+        }
+        // 开关按钮
+        .navbar-toggle {
+            .icon-bar {
+                background: #fff;
+            }
+        }
+    }
+    // home 模块
+    #home {
+        margin-top: 44px;
+        background: url(http://www.designbootstrap.com/livedemos/2015/01/18/design-agency/assets/img/home.jpg) center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        .overlay {
+            min-height: 600px;
+            background: rgba(131, 225, 123, 0.2);
+            color: #fff;
+            .row {
+                padding-top: 60px;
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    #service {
+        margin-bottom: 40px;
+        .row {
+            margin-bottom: 40px;
+            i {
+                &:hover {
+                    color: green;
+                    transform: scale(3, 3);
+                }
+                color: red;
+            }
+        }
+    }
+}

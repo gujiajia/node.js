@@ -1,0 +1,86 @@
+<table id="order-datagrid" title="管理订单" class="easyui-datagrid" data-options="
+url:'order/allOrders',
+toolbar:'#toolbar'" pagination="true" rownumbers="true" fitColumns="true" singleSelect="true">
+    <thead>
+        <tr>
+            <th field="Id_O" width="200">订主键</th>
+            <th field="OrderNo">订单编号</th>
+            <th field="Id_P">订单人编号</th>
+        </tr>
+
+    </thead>
+</table>
+
+<div id="toolbar">
+    <a class="easyui-linkbutton" iconCls="icon-add" onclick="openDialog();url='order/addOrder';">增加</a>
+    <a class="easyui-linkbutton" iconCls="icon-edit" onclick="editOrder()">编辑</a>
+    <a class="easyui-linkbutton" iconCls="icon-remove" onclick="deleteOrder()">删除</a>
+</div>
+
+
+<!--对话框-->
+<div id="order-dialog" class="easyui-dialog" style="width: 300px;" title="订单对话框" closed="true">
+    <h2>管理订单</h2>
+    <form id="order-form" method="GET">
+        <!--订单主键-->
+        <div><input name="Id_O" class="easyui-textbox" required label="订单主键"></div>
+        <div><input name="OrderNo" class="easyui-textbox" required label="订单编号"></div>
+        <div><input name="Id_P" class="easyui-textbox" required label="订单人的编号"></div>
+        <div style="text-align:center;padding:5px 0">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submit()" style="width:80px">Submit</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#order-form').form('clear')" style="width:80px">Clear</a>
+        </div>
+    </form>
+
+</div>
+<script>
+    var url = "";
+    //清空表单数据
+    function openDialog() {
+        $('#order-dialog').dialog('open').dialog('center');
+        $('#order-form').form('clear');
+    }
+    //提交表单
+    function submit() {
+        $('#order-form').form('submit', {
+            url: url,
+            // 提交表单之前验证表单数据合法性
+            onSubmit: function() {
+                // 表单数据不合法,返回false,不提交表单
+                return $('#order-form').form('validate');
+            },
+            success: function() {
+                // 请求成功
+                $('#order-dialog').dialog('close');
+                $('#order-datagrid').datagrid('reload');
+            }
+        })
+    }
+    //编辑表单
+    function editOrder() {
+        //1. 拿到表单被选取的行
+        var row = $('#order-datagrid').datagrid('getSelected');
+        $('#order-dialog').dialog('open').dialog('center');
+        $('#order-form').form('load', row);
+        url = 'order/modifyOrder';
+    }
+
+    function deleteOrder() {
+        //1. 拿到表单被选取的行
+        var row = $('#order-datagrid').datagrid('getSelected');
+        if (row) {
+            $.messager.confirm('确认删除该订单吗?', '确定删除Id_O为' + row.Id_O + '的订单吗', function(ok) {
+                if (ok) {
+                    $.ajax('order/deleteOrder', {
+                        data: {
+                            Id_O: row.Id_O
+                        },
+                        success: function() {
+                            $('#orderdatagrid').datagrid('reload'); // reload the user data}
+                        }
+                    })
+                }
+            });
+        }
+    }
+</script>

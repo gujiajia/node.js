@@ -1,0 +1,20 @@
+$navbarColor:rgb(35, 133, 161);
+body {
+    .navbar {
+        background: $navbarColor;
+        // logo 
+        .navbar-brand {
+            padding: 0;
+        }
+        // 导航条
+        .navbar-toggle span.icon-bar {
+            background: #fff;
+        }
+        .navbar-collapse li a {
+            &:hover {
+                color: #fff;
+            }
+            color: #fff;
+        }
+    }
+}

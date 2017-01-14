@@ -1,0 +1,31 @@
+<ion-side-menus>
+    <!-- Left menu -->
+    <ion-side-menu side="left">
+        <ion-content>
+            <!-- file文件的方式打开 accept="image/*" 只接受图片文件 -->
+            <!-- 图片选择框 -->
+            <input type="file" accept="image/*" id="chooseImg" hidden onchange="angular.element(this).scope().modifyAvatar(this)">
+            <div class="avatar text-center">
+                <img src="{{avatar}}" alt="" class="img-responsive" ng-click="showActionSheet()">
+                <h4 ng-hide="isEdit" class="text-center" style="color:#fff;">{{nickname}}<i ng-click="isEdit=true" class="ion ion-edit"></i></h4>
+                <div ng-show="isEdit">
+                    <input type="text" ng-model="nickname" style="margin:0 auto;width:60%;background:transparent;color:#fff;display:inline-block;">
+                    <i style="color:#fff;" class="ion ion-checkmark-circled" ng-click="isEdit=false;changeNickname()"></i>
+                </div>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+    <!--页面的内容-->
+    <ion-side-menu-content>
+        <!-- 布局主要的页面内容 <ion-nav-view> -->
+        <!--导航条视图  加载子视图的名字-->
+        <ion-nav-view name="menuContent">
+
+        </ion-nav-view>
+    </ion-side-menu-content>
+
+    <!-- Right menu -->
+    <ion-side-menu side="right">
+    </ion-side-menu>
+
+</ion-side-menus>

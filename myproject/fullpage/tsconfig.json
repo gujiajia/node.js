@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "outDir": "dist",
+        "sourceMap": true,
+        "sourceRoot": "src",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "**/*.ts"
+    ]
+}

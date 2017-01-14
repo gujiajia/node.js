@@ -1,0 +1,10 @@
+body .navbar {
+  background: #2385a1; }
+  body .navbar .navbar-brand {
+    padding: 0; }
+  body .navbar .navbar-toggle span.icon-bar {
+    background: #fff; }
+  body .navbar .navbar-collapse li a {
+    color: #fff; }
+    body .navbar .navbar-collapse li a:hover {
+      color: #fff; }

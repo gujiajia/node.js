@@ -1,0 +1,29 @@
+<ion-view hide-nav-bar="true" hide-back-button="false">
+    <input type="file" id="addProductImageInput" onchange="angular.element(this).scope().addProductImage(this)">
+    <div class="bar bar-header bar-dark">
+        <ion-back-button onclick="history.back()" class="button button-clear icon ion-ios-arrow-back"></ion-back-button>
+        <h1 class="title">{{isNew?'新建产品':'产品详情'+product.name}}</h1>
+        <button ng-click="saveProduct()" class="button button-icon icon ion-document-text">保存</button>
+    </div>
+    <ion-content style="margin-top:40px;">
+        <div class="list">
+            <label class="item item-input">
+                <span class="input-label">产品名称</span>
+                <input type="text" ng-model="product.name">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">产品价格</span>
+                <input type="text" ng-model="product.price">
+            </label>
+        </div>
+        <!--文本域-->
+        <textarea ng-model="product.summary" rows="10" placeholder="   产品描述" cols="" style="width: 100%;font-size: 17px;"></textarea>
+        <div class="row product-images">
+            <div class="col col-20" ng-repeat=" image in product.images" style="background:url({{image}}) no-repeat;background-size: cover;"></div>
+            <div class="col col-20 addImage" onclick="document.querySelector('#addProductImageInput').click()"></div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-dark">
+        <div class="title" ng-click=""><i class="icon ion-android-delete"></i> 删除</div>
+    </div>
+</ion-view>

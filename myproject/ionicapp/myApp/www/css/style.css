@@ -1,0 +1,35 @@
+/* Empty. Add your own CSS if you like */
+
+.avatar {
+    display: inline-block;
+    border: 2px solid #fff;
+    background: url('../img/bg-3.jpg') no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.avatar img {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    border: 2px solid #fff;
+}
+
+.product-images {
+    padding-left: 4.5%;
+}
+
+.product-images .col-20 {
+    padding-bottom: 20%;
+    margin-right: 5%;
+    background: yellow;
+}
+
+.product-images .addImage {
+    background: url(../img/ion-plus.png) no-repeat;
+    background-size: cover;
+}

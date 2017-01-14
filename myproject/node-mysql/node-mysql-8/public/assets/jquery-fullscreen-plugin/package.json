@@ -1,0 +1,34 @@
+{
+  "name": "jquery-fullscreen-plugin",
+  "version": "1.0.0",
+  "description": "This jQuery plugin provides a simple to use mechanism to control the new fullscreen mode of modern browsers",
+  "main": "jquery.fullscreen-min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayahr/jquery-fullscreen-plugin.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "fullscreen",
+    "ui",
+    "webkit",
+    "chrome",
+    "safari",
+    "opera",
+    "IE",
+    "edge",
+    "firefox"
+  ],
+  "author": "Stefan Kecskes <mr.kecskes@gmail.com> (https://skey.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kayahr/jquery-fullscreen-plugin/issues"
+  },
+  "homepage": "https://github.com/kayahr/jquery-fullscreen-plugin#readme",
+  "_from": "jquery-fullscreen-plugin@1.0.0",
+  "_resolved": "http://registry.npm.taobao.org/jquery-fullscreen-plugin/download/jquery-fullscreen-plugin-1.0.0.tgz"
+}

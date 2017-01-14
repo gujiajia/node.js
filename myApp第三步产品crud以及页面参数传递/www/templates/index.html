@@ -1,0 +1,29 @@
+<!--导航条-->
+<!--视图-->
+<ion-view hide-nav-bar="true">
+
+    <!--导航条-->
+    <div class="bar bar-header bar-positive item-input-inset">
+        <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+        <label class="item-input-wrapper">
+    <i class="icon ion-ios-search placeholder-icon"></i>
+    <input type="search" placeholder="产品组检索" ng-keyup="searchProduct()" ng-model="keyword" >
+  </label>
+    </div>
+
+
+
+    <ion-content style="margin-top:40px;">
+
+
+        <div class="item item-button-right" ng-repeat="group in groups"> {{group.name}}
+            <button class="button button-positive" ng-click="actionGroup(group)">
+      <i class="icon ion-gear-b"></i>
+    </button>
+        </div>
+    </ion-content>
+    <!--工具条-->
+    <div class="bar bar-footer bar-positive">
+        <div class="title" ng-click="addNewGroup()">新增产品组 <i class="ion ion-plus"></i></div>
+    </div>
+</ion-view>

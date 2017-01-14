@@ -1,0 +1,44 @@
+<table title="管理订单" class="easyui-datagrid" data-options="
+url:'order/allOrders',
+toolbar:'#toolbar'" pagination="true" rownumbers="true" fitColumns="true" singleSelect="true">
+    <thead>
+        <tr>
+            <th field="Id_O" width="200">订主键</th>
+            <th field="OrderNo">订单编号</th>
+            <th field="Id_P">订单人编号</th>
+        </tr>
+
+    </thead>
+</table>
+
+<div id="toolbar">
+    <a class="easyui-linkbutton" iconCls="icon-add" onclick="$('#order-dialog').dialog('open').dialog('center')">增加</a>
+    <a class="easyui-linkbutton" iconCls="icon-edit">编辑</a>
+    <a class="easyui-linkbutton" iconCls="icon-remove">删除</a>
+</div>
+<!--对话框-->
+<div id="order-dialog" class="easyui-dialog" title="用户订单对话框" closed="true" style="width:400px;height:200px;padding:10px ">
+    <h2>管理订单</h2>
+    <form id="order-form">
+        <!--对话框-->
+        <div><input name="Id_O" class="easyui-textbox" required label="订单主键"></div>
+        <div><input name="OrderNo" class="easyui-textbox" required label="订单人编号"></div>
+        <div><input name="Id_P" class="easyui-textbox" required label="订单人编号"></div>
+        <div style="text-align:center;padding:5px 0">
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#order-form').form('submit')" style="width:80px">Submit</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" onclick="$('#order-form').form('clear')" style="width:80px">Clear</a>
+        </div>
+    </form>
+</div>
+
+<script>
+    function submit() {
+        $('#order-form').form('submit', {
+            //提交表单之前验证表单数据的合法性
+            onSubmit: function() {
+                //表单数据不合法，返回false,不提交表单
+                return $('#order-form').form('validate');
+            }
+        })
+    }
+</script>

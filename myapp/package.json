@@ -1,0 +1,30 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "concurrently \"gulp \" \"tsc -w\" \" lite-server \" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bootstrap": "^3.3.32",
+    "@types/jquery": "^2.0.34",
+    "bootstrap": "^3.3.7",
+    "concurrently": "^3.1.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gujiajia/myapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gujiajia/myapp/issues"
+  },
+  "homepage": "https://github.com/gujiajia/myapp#readme",
+  "description": ""
+}

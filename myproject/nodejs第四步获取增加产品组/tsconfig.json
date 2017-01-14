@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        //组件解析规范nodejs的commonjs规范
+        "module": "commonjs",
+        // 生成 **.js.map方便调试
+        "sourceMap": true
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>模仿的第一个bootstrap 响应式网站</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/1.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="http://www.designbootstrap.com/livedemos/2015/01/18/design-agency/assets/img/vivaldi-logo.png">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <!--home模块-->
+    <div id="home">
+        <!--放一个遮罩层  朦胧美   -->
+        <div class="container-fluid">
+            <div class="overlay">
+                <!-- 栅格布局 文字居中  1-10-1 2-8-2 3-6-3 4-4-4  -->
+                <div class="row">
+                    <!-- 2 -8      -->
+                    <div class="col-md-offset-2 text-center  col-md-8  ">
+                        <h1>一段说明性文字</h1>
+                        <p>第二段详细说明</p>
+                        <p>第二段详细说明</p>
+                        <p>第二段详细说明</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- service 栅格布局  -->
+    <div id="service">
+        <div class="container">
+            <!--第一行 row  4-4-4 -->
+            <div class="row">
+                <div class="col-md-offset-4 text-center col-md-4 ">
+                    <h1>一段说明性文字</h1>
+                    <p>详细说明</p>
+                </div>
+            </div>
+            <!--第二行 图标 4-4-4 -->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fa fa-phone-square fa-5x" aria-hidden="true"></i>
+                    <h1>一段说明性文字</h1>
+                    <p>详细说明</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-phone-square fa-5x" aria-hidden="true"></i>
+                    <h1>一段说明性文字</h1>
+                    <p>详细说明</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-phone-square fa-5x" aria-hidden="true"></i>
+                    <h1>一段说明性文字</h1>
+                    <p>详细说明</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

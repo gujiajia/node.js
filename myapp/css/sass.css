@@ -1,0 +1,105 @@
+body .navbar {
+  background: url(//www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png) #9c1e2e repeat-x;
+  border-radius: 0; }
+
+body .navbar-brand img {
+  margin-top: -4px;
+  max-height: 28px; }
+
+body .dropdown > a,
+body .dropdown a:hover,
+body .dropdown.open > a,
+body .dropdown a:visited {
+  background: #9c1e2e; }
+
+body .dropdown-toggle {
+  color: #fff !important;
+  margin: 1px 1;
+  background: transparent !important;
+  box-shadow: none !important; }
+
+body .carousel-indicators li {
+  background: #9dc819 none repeat scroll 0 0;
+  opacity: 1; }
+
+body .carousel-indicators li.active {
+  background: #390b1f none repeat scroll 0 0;
+  opacity: 1; }
+
+body .item img {
+  line-height: 1;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block; }
+
+body .carousel {
+  margin-top: -10px; }
+
+body .front-page-header {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: bold; }
+  body .front-page-header a {
+    color: #249136; }
+    body .front-page-header a:hover {
+      color: #337ab7; }
+
+body .product-category-link {
+  font-size: 12px;
+  display: block;
+  margin: 0;
+  color: #838383; }
+  body .product-category-link:hover {
+    color: #23527c; }
+
+body .product-category-link2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0px;
+  color: #838383; }
+  body .product-category-link2:hover {
+    color: #838383; }
+
+body .container > .yinx .col-md-3 {
+  width: 20% !important;
+  margin: 0; }
+
+body .s-style span {
+  font-size: 12px;
+  color: #b5b5b6;
+  padding-left: 2px; }
+
+body .footer {
+  margin-top: 150px;
+  font-size: 11px;
+  color: #777777; }
+  body .footer .col-md-2 {
+    padding: 0; }
+
+@media only screen and (max-width: 767px) {
+  body .navbar-brand {
+    width: 100%; }
+    body .navbar-brand span {
+      color: white;
+      display: inline-block !important; }
+    body .navbar-brand img {
+      display: inline-block;
+      width: 50%; }
+  body .dropdown-toggle {
+    background: url(//www.pantrysbest.com/assets/christmas-bg-06297b0446b04a61a5a68a6e3f13b7cb.png) repeat-x; }
+  body .dropdown-menu a {
+    color: white !important; }
+  body .container {
+    padding-left: 2px;
+    padding-right: 2px; }
+  body .container > .yinx .col-xs-6 {
+    width: 50% !important;
+    padding-left: 2px;
+    padding-right: 2px; }
+  body .container > .tuijian.col-xs-6 {
+    width: 25% !important; }
+  body .product-category-link2 {
+    display: block; }
+  body .s-style {
+    padding-left: 2px;
+    padding-right: 2px; } }
